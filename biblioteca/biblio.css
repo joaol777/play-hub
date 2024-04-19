@@ -1,0 +1,50 @@
+.purple-blue {
+    background-color: #440bbf;
+}
+
+.title{
+    color: rgba(255, 255, 255, 0.918);
+    font: bolder;
+    font-family: "8bits";
+    font-size: xx-large;
+}
+
+.btn-49{
+    width: 49%;
+}
+
+.btn-group{
+    width: 100%;
+}
+
+.p-font{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+}
+
+.jooj{
+    height: 23em;
+}
+
+.nav-font{
+    text-align: center;
+    color: rgba(3, 3, 3, 0.918);
+    font-size: large;
+}
+
+.nav-font-2{
+    color: rgba(253, 252, 252, 0.918);
+    font-size: 2rem;
+}
+
+.btn-100{
+    width: 100%;
+}
+
+.btn-80{
+    width: 80%;
+}
+
+.src-50{
+    width: 50%;
+}

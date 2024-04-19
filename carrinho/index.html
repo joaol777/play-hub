@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de compra</title>
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <head src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="card.js"></script>
+
+
+</head>
+<body style="background-color:#0e0326">
+    <div class="container bg-white rounded-top mt-5" id="zero-pad">
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-10 col-12 pt-3" id="carrinho">
+            <div class="d-flex">
+                <div class="p-font pt-1"><h4>PlayHub</h4></div>                     
+            </div>
+            <div class="d-flex flex-column pt-4">
+                <div><h5 class="p-font text-uppercase font-weight-normal">Jogos adicionados</h5></div>
+                <div class="font-weight-normal">2 items</div>
+            </div>
+            <div class="d-flex flex-row px-lg-5 mx-lg-5 mobile" id="heading">
+                <div class="px-lg-5 mr-lg-5" id="produc">PRODUCTS</div>
+                <div class="px-lg-5 ml-lg-5" id="prc">PRICE</div>
+                <div class="px-lg-5 ml-lg-1" id="quantity">QUANTITY</div>
+                <div class="px-lg-5 ml-lg-3" id="total">TOTAL</div>
+            </div>
+            <div id="produto0" class="d-flex flex-row justify-content-between align-items-center pt-lg-4 pt-2 pb-3 border-bottom mobile">
+                <div class="d-flex flex-row align-items-center">
+                    <div><img src="https://play-lh.googleusercontent.com/VSwHQjcAttxsLE47RuS4PqpC4LT7lCoSjE7Hx5AW_yCxtDvcnsHHvm5CTuL5BPN-uRTP=s48" width="150" height="150" alt="" id="image"></div>
+                    <div class="d-flex flex-column pl-md-3 pl-1">
+                        <div><h6>minecraft</h6></div>
+                        <div >Art.No:<span class="pl-2">5</span></div>
+                        
+                        <div>descriçao:<span class="pl-1"> jogo quadrado</span></div>
+                    </div>                    
+                </div>
+                <div class="pl-md-0 pl-1"><b>R$50,00</b></div>
+                <div class="pl-md-0 pl-2">
+                    <span class="fa fa-minus-square text-secondary" onclick="removerItem(0)"></span>
+                        <span class="px-md-3 px-1" id="quantidade0">0</span>
+                    <span class="fa fa-plus-square text-secondary" onclick="adicionarItem(0)"></span>
+                </div>
+                <div class="pl-md-0 pl-1"><b>R$</b><span id="total0"></span></div>
+                <div class="close">&times;</div>
+            </div>
+            <div id="produto1" class="d-flex flex-row justify-content-between align-items-center pt-4 pb-3 mobile">
+                <div class="d-flex flex-row align-items-center">
+                    <div><img src="https://scontent.fsjk2-1.fna.fbcdn.net/v/t39.30808-6/294859813_342676261402710_8599645939570797708_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=aB1mH78Qs5gAX-D9ti5&_nc_ht=scontent.fsjk2-1.fna&oh=00_AfArtKA53vf30SrTqhcHHKW1JqKvOB2Lg1i4GOOjFS0xng&oe=65389F79" width="150" height="150" alt="" id="image"></div>
+                    <div class="d-flex flex-column pl-md-3 pl-1">
+                        <div><h6>MINEIRINHO SOUS LIKE</h6></div>
+                        <div >Art.No:<span class="pl-2">-666</span></div>
+                        
+                        <div>descriçao:<span class="pl-2"> mt foda</span></div>
+                    </div>                    
+                </div>
+                <div class="pl-md-0 pl-1"><b>R$30,00</b></div>
+                <div class="pl-md-0 pl-2">
+                    <span class="fa fa-minus-square text-secondary" onclick="removerItem(1)"></span>
+                        <span class="px-md-3 px-1" id="quantidade1">0</span>
+                    <span class="fa fa-plus-square text-secondary" onclick="adicionarItem(1)"></span>
+                </div>
+                <div class="pl-md-0 pl-1"><b>R$</b><span id="total1"></span></div>
+                <div class="close">&times;</div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="container bg-light rounded-bottom py-4" id="zero-pad">
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-10 col-12">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <button class="btn btn-sm bg-light border border-dark"><a href="../principal.html">GO BACK</a></button>
+                </div>
+                <div class="px-md-0 px-1" id="footer-font">
+                    <b class="pl-md-4">SUBTOTAL R$<span class="pl-md-4" id="valorTotalCompra"></span></b>
+                </div>
+                <div>
+                    <button class="btn btn-sm bg-dark text-white px-lg-5 px-3"><a href="../cartao/index.html">CONTINUE</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
